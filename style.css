@@ -266,51 +266,21 @@
     .visit p { color: var(--caramel-light); margin-bottom: 32px; line-height: 1.8; }
     .visit-info { display: flex; flex-direction: column; gap: 16px; }
     .visit-row { display: flex; align-items: flex-start; gap: 16px; }
-    .visit-row .v-icon {
-      width: 44px; height: 44px;
-      border-radius: 50%;
-      background: rgba(184,125,75,0.2);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      position: relative;
-    }
 
-    /* CSS icons for visit section */
-    .v-icon.loc::after {
-      content: '';
-      width: 14px; height: 18px;
-      border: 2px solid var(--caramel-light);
-      border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
-      border-bottom: none;
-    }
-    .v-icon.clock::after {
-      content: '';
-      width: 16px; height: 16px;
-      border: 2px solid var(--caramel-light);
+    .visit-icon {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: #3B2515;
       border-radius: 50%;
     }
-    .v-icon.clock::before {
-      content: '';
-      position: absolute;
-      width: 6px; height: 2px;
-      background: var(--caramel-light);
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .v-icon.coffee::after {
-      content: '';
-      width: 12px; height: 14px;
-      border: 2px solid var(--caramel-light);
-      border-radius: 0 0 4px 4px;
-    }
-    .v-icon.coffee::before {
-      content: '';
-      position: absolute;
-      bottom: 8px;
-      width: 16px; height: 3px;
-      border: 2px solid var(--caramel-light);
-      border-bottom: none;
-      border-radius: 4px 4px 0 0;
+    .visit-icon i {
+      font-size: 1.2rem;
+      color: var(--caramel-light);
+      line-height: 1;
     }
 
     .visit-row .v-text h4 { font-size: 1.05rem; margin-bottom: 4px; color: var(--cream); }
